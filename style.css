@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: rgb(202, 14, 14);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+
+}
+.cardbox1 {
+    background-color: rgb(3, 68, 90);
+    color: turquoise;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    border-radius: 10px;
+
+}
+.cardbox2 {
+    background-color: rgb(25, 165, 88);
+    color: turquoise;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 8px;
+
+}
+.cardbox3 {
+    background-color: rgb(165, 25, 88);
+    color: turquoise;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 12rem;
+    text-align: center;
+    border-radius: 6px;
+
+}/* Sidebar */
+.sidebar {
+    background: #eee;
+    padding: 1rem;
+    border-radius: 8px;       
+}
+
+/* Footer */
+footer {
+background: #85d396;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.main-layout {
+    grid-template-columns: 1fr;
+}
+
+.cardbox1, .cardbox2, .cardbox3 {
+    flex: 1 1 100%;
+    width: auto;}
+}
+
